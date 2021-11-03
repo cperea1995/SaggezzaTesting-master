@@ -10,7 +10,6 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.*;
 
-// hi idk
 
 
 @ExtendWith(MockitoExtension.class)
@@ -33,8 +32,6 @@ public class FlowControlTest {
         String input = "1";
 
 
-        //given(intTesterMock.isInteger("1")).willReturn(true);
-
         // When: I enter the string “1”
         flowController.run(input);
 
@@ -53,7 +50,7 @@ public class FlowControlTest {
 
 
         // When: I enter the string “0”
-//        when(intTesterMock.isInteger("0")).thenReturn(true);
+
         flowController.run(input);
 
         // Then: call isInteger() once
@@ -72,8 +69,6 @@ public class FlowControlTest {
         // When: I enter the string “Bob”
         flowController.run(input);
 
-//        when(intTesterMock.isInteger("Bob")).thenReturn(false);
-
         // Then: call isInteger() once
         then(intTesterMock).should(times(1)).isInteger(input);
 
@@ -82,6 +77,8 @@ public class FlowControlTest {
 
     @Test
     public void givenOneCallIsInsideBoundaryOnce() {
+
+        // NOT COMPLETED YET
 
         // Given: I am a user
         String input = "1";

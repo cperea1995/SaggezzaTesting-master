@@ -1,6 +1,7 @@
 package com.spring.saggezza.technicalclass;
 
 public class IntTester implements IIntTester {
+
     public boolean isInteger(String inputNumber) {
 
         try {
@@ -12,3 +13,4 @@ public class IntTester implements IIntTester {
 
     }
 }
+
